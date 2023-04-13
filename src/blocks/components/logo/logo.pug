@@ -1,0 +1,7 @@
+mixin logo()
+  if page==="index.html"
+    span.logo
+      +img("content", "logo","svg", 187, 96, "Логотип gid-group")
+  else
+    a.logo(href="index.html" aria-label="Нажмите для перехода на главную")&attributes(attributes)
+        +img("content", "logo","svg", 187, 96, "Логотип gid-group")

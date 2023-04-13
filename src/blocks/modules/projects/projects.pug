@@ -1,0 +1,9 @@
+- const projects = [{altText:"Кухня в бело-серых тонах",title:"Квартира на&nbsp;Академической",style:"Стиль - Лофт",sq:"130 м2"},{altText:"Столовая в юежевых тонах",title:"Квартира на&nbsp;Рижской",style:"Стиль - Скандинавский",sq:"94 м2"},{altText:"Ванная в бело-серо-зеленых тонах",title:"Квартира на&nbsp;Чистых прудах",style:"Стиль - Лофт",sq:"68 м2"},{altText:"Спальня в бело-бежевых тонах",title:"Квартира на&nbsp;Рижской",style:"Стиль - Скандинавский",sq:"94 м2"},{altText:"Спальня в серых тонах с темно-зеленой стеной",title:"Квартира на&nbsp;Чистых прудах",style:"Стиль - Лофт",sq:"85 м2"},{altText:"Кухня-столовая в бело-коричневых тонах",title:"Квартира на&nbsp;Академической",style:"Стиль - Лофт",sq:"108 м2"}]
+section.projects
+  .container
+    h2.title.title--section Наши проекты
+    ul.projects__list
+      each project,index in projects
+        li.projects__item
+          +project-card(project,index)
+    +btn({tag:"button", type: "button", text: "Еще проекты", icon:"circle-arrow", width: 25, height: 25}).btn--reverse.btn--circle-arr

@@ -1,0 +1,10 @@
+mixin step-card(info, index)
+  .step-card&attributes(attributes)
+    .step-card__num
+      span!=`0${index + 1}`
+    .step-card__content
+      span.step-card__icon
+        +icon(info.img, 60, 58)
+      h3.title!=info.title
+      p!=info.text
+      span!=info.step

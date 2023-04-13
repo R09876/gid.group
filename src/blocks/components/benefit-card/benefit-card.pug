@@ -1,0 +1,7 @@
+mixin benefit-card(card)
+  .benefit-card&attributes(attributes)
+    h3.title.title--m!=card.title
+    .benefit-card__content
+      h4.title.title--xs.benefit-card__subtitle!=card.subtitle
+      p!=card.content
+

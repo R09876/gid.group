@@ -1,0 +1,15 @@
+- list = ['чек листы на&nbsp;5&nbsp;ошибок в&nbsp;строительстве','5&nbsp;трендов 2021 года на&nbsp;дизайн интерьеров']
+
+section.cost
+  .container
+    h2.title.title--section Стоймость проекта
+    .cost__content
+      .cost__text
+        h3.title Узнайте стоимость дизайн-проекта, ответив на&nbsp;3&nbsp;вопроса
+        p Пройдите короткий тест, узнайте цену, получите консультацию по&nbsp;будущему проекту
+        +btn({tag:"button", type: "button", text: "Узнать стоимость"}).btn--l(data-popup)
+      .cost__list
+        span.cost__icon
+          +icon("img", 607, 333)
+        h3.title.title--sm Бонусы:
+        +list(list)

@@ -1,0 +1,11 @@
+mixin project-card(card, index)
+  .project-card&attributes(attributes)
+    .project-card__img-content
+      .project-card__img
+        +picture('content', `project-${index + 1}`, "jpg", 576, 657, card.altText)
+      .project-card__more
+        +btn({tag:"a", text: "Смотреть проект",href: "#", label:"Нажмите, чтоб перейти к проекту"}).btn--tr
+    .project-card__text
+      h3.title.title--xs!=card.title
+      span!=card.style
+      span!=card.sq

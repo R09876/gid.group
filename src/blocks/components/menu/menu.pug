@@ -1,0 +1,7 @@
+mixin menu(menu)
+  .menu&attributes(attributes)
+    +logo()
+    ul.menu__list
+      each item in menu
+        li.menu__item!=item
+    //+social(social)

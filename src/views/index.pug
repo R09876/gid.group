@@ -2,12 +2,28 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "gulp-pug-starter"
+  - const title = "gid-group - главная страница"
+  - const page = "index.html"
+  - const social = [{href:"#",label:"Нажмите для перехода в наш телеграм",icon:"telegram"},{href:"#",label:"Нажмите для перехода в наш инстаграм",icon:"inst"},{href:"#",label:"Нажмите для перехода в наш фейсбук",icon:"facebook"},{href:"#",label:"Нажмите для перехода в наш ютуб",icon:"youtube"},{href:"#",label:"Нажмите для перехода в наш тикток",icon:"tiktok"},{href:"#",label:"Нажмите для перехода в наш ватсап",icon:"whatsapp"}]
+
+block header
+  include ../blocks/modules/header/header
 
 block content
-	include ../blocks/modules/header/header
-	include ../blocks/modules/footer/footer
+  include ../blocks/modules/intro/intro
+  include ../blocks/modules/benefits/benefits
+  include ../blocks/modules/cost/cost
+  include ../blocks/modules/services/services
+  include ../blocks/modules/projects/projects
+  include ../blocks/modules/steps/steps
+  include ../blocks/modules/about-us/about-us
+  include ../blocks/modules/instagram/instagram
+  include ../blocks/modules/catalog/catalog
+
+block footer
+  include ../blocks/modules/footer/footer
+
 
 block scripts
-	script(src="js/vendor.js")
-	script(src="js/main.js")
+  script(src="js/vendor.js")
+  script(src="js/main.js")
