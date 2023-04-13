@@ -1,0 +1,11 @@
+- const steps = [{img:"mail",title:"Заявка",text:"Оставляйте заявку на&nbsp;сайте и&nbsp;получите 2&nbsp;варианта планировки квартиры БЕСПЛАТНО",step:"Оставить заявку"},{img:"triangle",title:"Дизайн",text:"Собираете на&nbsp;сайте стиль из&nbsp;четырех готовых решений с&nbsp;возможностью редактирования",step:"Выбрать дизайн"},{img:"calc",title:"Расчет",text:"Расчитываете финальную стоимость ремонта с&nbsp;помощью онлайн-калькулятора",step:"Посчитать"},{img:"sheet",title:"Договор",text:"Собираете на&nbsp;сайте стиль из&nbsp;четырех готовых решений с&nbsp;возможностью редактирования",step:"Оставить заявку"},{img:"paint-roller",title:"Ремонт",text:"Собираете на&nbsp;сайте стиль из&nbsp;четырех готовых решений с&nbsp;возможностью редактирования",step:"Оставить заявку"},{img:"build",title:"Сдача объекта",text:"Расчитываете финальную стоимость ремонта с&nbsp;помощью онлайн-калькулятора"}]
+section.steps
+  .container
+    h2.title 6&nbsp;ЭТАПОВ ОТ&nbsp;ЗАЯВКИ ДО&nbsp;СДАЧИ ГОТОВОГО ОБЪЕКТА
+    ul.steps__list
+      each step,index in steps
+        li.steps__item
+          +step-card(step,index)
+    +btn({tag:"button", type: "button", text: "Начать", icon:"arrow", width: 116, height: 4})
+
+

@@ -1,0 +1,8 @@
+- const cardList = [{title: "100+",subtitle: "Реализованные проекты", content: "Работаем с&nbsp;любой недвижимостью&nbsp;&mdash; от&nbsp;дворцов до&nbsp;квартир"},{title: "10 лет",subtitle: "Безупречная репутация",content: "Наши специалисты постоянно стажируются у&nbsp;лидеров строительных работ"},{title: "3 года",subtitle: "Гарантии на&nbsp;все работы",content: "Мы&nbsp;внимательно изучаем рынок отделочных материалов и&nbsp;инновационной техники"},{title: "Сроки",subtitle: "Процесс",content: "Нужно лучшее&nbsp;&mdash; закажи это у&nbsp;лучших!"}]
+
+section.benefits
+  .container
+    ul.benefits__list
+      each card in cardList
+        li.benefits__item
+          +benefit-card(card)

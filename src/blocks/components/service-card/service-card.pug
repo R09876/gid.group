@@ -1,0 +1,7 @@
+mixin service-card(data, index)
+  .service-card&attributes(attributes)
+    .service-card__img
+      +picture('content', `services-${index + 1}`, "jpg", 437, 487, data.altText)
+    .service-card__text
+      h3.title.title--sb!=data.title
+      p!=data.content

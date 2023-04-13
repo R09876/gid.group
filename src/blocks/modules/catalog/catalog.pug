@@ -1,0 +1,15 @@
+section.catalog
+  .container
+    h2.title ПОЛУЧИТЕ КАТАЛОГ НАШИХ ПРОЕКТОВ
+    .catalog__img
+      +picture("content","catalog","jpg", 958, 639,"Девушка держит кружку и сидит за столом посреди просторной светлой кухни-гостиной")
+    .catalog__text
+      h3.title Оставьте ваш E-mail, чтобы получить каталог наших проектов
+      p Каталог поможет вам выбрать стиль и&nbsp;продумать планировку квартиры
+      .catalog__form
+        form(action="#" method="post")
+          label.visually-hidden Введите емейл для получения каталога
+            input(type="email" name="email" placeholder="Введите ваш E-mail" required)
+          label Я согласен на <a href="#">обработку персональных данных</a>
+            input(type="checkbox" name="check" required)
+          +btn({tag:"button",type:"submit",text:"Получить каталог"})

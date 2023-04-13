@@ -39,6 +39,14 @@ const requireDir = require("require-dir"),
             dist: "./dist/img/",
             watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg}"
         },
+        images: {
+          src: [
+              "./src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}",
+              "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
+          ],
+          dist: "./dist/img/",
+          watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg}"
+      },
         sprites: {
             src: "./src/img/svg/*.svg",
             dist: "./dist/img/sprites/",
